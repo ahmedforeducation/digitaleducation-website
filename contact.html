@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="home-button">Home</a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html" class="help-button">Help</a>
+            <a href="chatbot.html">chatbot</a>
+        </div>
+        <button class="more-button" onclick="toggleDropdown()">More</button>
+        <div id="dropdown" class="dropdown-content">
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html" class="help-button">Help</a>
+            <a href="chatbot.html">chatbot</a>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <main>
+        <h1><center>Contact Us</center></h1>
+      
+        <body class="contact-page">
+            <!-- Your existing content -->
+        </body>
+        <div class="contact-page">
+           <form action="mailto:ahmedmomtaz445@gmail.com" method="post" enctype="text/plain">
+               <br>
+            <br>
+            <label for="fname"><center>First Name</center></label>
+          <br>
+         <center>       <input type="text" id="fname" name="firstname" placeholder="Your name.." style="height:120px" required></center>
+<br>
+                <label for="lname"><center>Last Name</center></label>
+           <br>
+                <center>   <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="height:120px" required></center>
+
+              <br>  <label for="email"><center>Email</center></label>
+              <br>
+               <center> <input type="email" id="email" name="email" placeholder="Your email.." style="height:120px" required></center>
+
+              <br>  
+              <label for="subject"><center>Subject</center></label>
+             <br>
+    <center>            <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px" required></textarea></center>
+<br>
+           <center>     <input type="submit" value="Submit"></center>
+            </form>
+       
+        </div>
+    </main>
+</body>
+</html>

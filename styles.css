@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(243, 214, 214, 0.9); /* Mint Blue Background */
+    color: black;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray; /* Gray Background for Nav Bar */
+    padding: 10px;
+}
+
+nav a {
+    color: white; /* White Text for Nav Links */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: normal; /* Thin Text */
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.home-button {
+    font-size: 24px;
+    font-weight: normal; /* Thin Text */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.more-button {
+    background-color: #E5E4E2; /* Platinum Color for More Button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;!important
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.more-button:hover,
+.more-button:active {
+    background-color: #E5E4E2; /* Maintain Platinum Color on Hover and Click */
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* Align Dropdown to the Right */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right; /* Right-align Dropdown Text */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: justify; /* Justify Text Alignment */
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Space between lines */
+    font-weight: normal; /* Thin Text */
+    color: white; /* White Text */
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(50% - 40px); /* Two images per row */
+    max-width: calc(50% - 40px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images are the same size */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Contact Form */
+.contact-container {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+    ), url('images/contact-backgroundimage.jpg'); /* Faded background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container input[type="submit"] {
+    background-color: gray; /* Gray Submit Button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: #555;
+    color: white;
+}
+button {
+    background-color: #808080; /* Gray */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button.more {
+    background-color: #E5E4E2; /* Platinum */
+}
+
+button:hover {
+    background-color: #666666; /* Darker gray */
+}
+button.home {
+    font-size: 1.5em; /* Adjust as needed */
+    padding: 15px 30px;
+}
+.subject-button {
+    background-color: #E5E4E2; /* Platinum */
+    color: black;
+    border: none;
+    padding: 0;
+    width: 48%; /* Allows two buttons per row */
+    height: 100px;
+    font-size: 1.2em; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px; /* Vertically centers the text */
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.subject-button:hover {
+    background-color: #d4d4d4; /* Darker platinum */
+}
